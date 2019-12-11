@@ -1,0 +1,56 @@
+{
+	"model_name":"Empleado",
+	"soft_deletes":"yes",
+	"pk":"id",
+	"localize":"yes",
+	"table":"empleados",
+    "fields": [		
+        {
+            "name": "nombre",
+            "type": "string"
+        },
+        {
+            "name": "edad",
+            "type": "number"
+        },
+        {
+            "name": "telefono",
+            "type": "string"
+        },
+        {
+          "name": "correo",
+            "type": "string"  
+        },
+        {
+            "name": "direccion",
+            "type": "string"
+        },
+        {
+            "name": "cargo",
+            "type": "string"
+        },
+        {
+            "name": "fechaIngreso",
+            "type": "date"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "productos",
+            "type": "belongsTo",
+            "class": "App\\productos"
+        }
+    ],
+
+    "validations": [
+        {
+            "field": "nombre",
+            "rules": "required|min:5|max:20"
+        },
+		{
+            "field": "correo",
+            "rules": "required|min:5"
+        }
+    ]
+	
+}

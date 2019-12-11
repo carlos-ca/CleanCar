@@ -1,0 +1,44 @@
+{ 
+	"model_name":"Proveedor",	
+	"soft_deletes":"yes",
+	"pk":"id",
+	"localize":"yes",
+	"table":"proveedor",
+    "fields": [		
+        {
+            "name": "Marca",
+            "type": "string"
+        },
+        {
+            "name": "Fecha",
+            "type": "string"
+        },
+        {
+            "name": "telefono",
+            "type": "string"
+        },
+        {
+            "name": "Correo",
+            "type": "string"
+        }
+    ],    
+    "validations": [
+        {
+            "field": "Marca",
+            "rules": "required|min:5|max:50"
+        },
+		{
+            "field": "Fecha",
+            "rules": "required|min:1"
+        },
+        {
+            "name": "Telefono",
+            "type": "string"
+        },
+        {
+            "name": "Correo",
+            "type": "string"
+        }
+    ]
+	
+}

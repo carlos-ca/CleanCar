@@ -1,0 +1,48 @@
+{
+	"model_name":"Solicitar",	 
+	"soft_deletes":"yes",
+	"pk":"id",
+	"localize":"yes",
+	"table":"solicitars",
+    "fields": [		
+        {
+            "name": "servicio",
+            "type": "string"
+        },
+		{
+            "name": "f_servicio",
+            "type": "string"
+        },
+        {
+            "name": "precio",
+            "type": "string"
+            },
+        {
+            "name": "Marca",
+            "type": "string"
+            },
+        {
+            "name": "Matricula",
+            "type": "string"
+            },
+        {
+            "name": "Direccion",
+            "type": "string"
+            },
+        {
+            "name": "Colonia",
+            "type": "string"
+            }
+    ],    
+    "validations": [
+        {
+            "field": "nombre",
+            "rules": "required|min:3|max:50"
+        },
+		{
+            "field": "correo",
+            "rules": "required|min:5"
+        }
+    ]
+	
+}
